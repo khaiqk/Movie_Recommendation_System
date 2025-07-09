@@ -1,0 +1,16 @@
+.env
+/processed_data/
+
+**/__pycache__/
+
+/old_files/
+
+/group1/
+
+/data/
+
+/temp/
+
+/REINFORCE/REINFORCE.ipynb
+
+/DQN/DeepQLearing.ipynb
