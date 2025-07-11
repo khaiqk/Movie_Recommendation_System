@@ -194,34 +194,3 @@ class Env:
         self.list_user_satisfaction.append(user_satisfaction)
 
         return user_satisfaction, stability
-    
-
-# print(data_users.head(1))
-# print("=" * 10)
-# print(data_movies.head(1))
-
-    
-model = DQL_model()
-env = Env(user_id=1, model=model)
-    
-
-# while True:
-#     refresh = input("Enter 's' to suggest next movies, 'r' to refresh movies, or 'q' to quit: ").strip().lower()
-    
-#     if refresh == 'q':
-#         print("Exiting the program.")
-#         break
-    
-#     if refresh == 'r':
-#         env.step(refresh=True)
-    
-#     if refresh == 's':
-#         choice = input("Enter the index of the movie you want to rate (0-9): ")
-#         env.step(index=int(choice))
-        
-#         rating = input("Enter your rating for the movie (1-5): ")
-#         env.rating_movie(rating=float(rating))
-        
-#         print(f"chosen movie: {choice}, rating: {rating}")
-        
-#     env.suggest_next_movie()
